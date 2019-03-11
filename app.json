@@ -1,0 +1,71 @@
+{
+  "id": "nl.1ic.autoremotemessage",
+  "version": "1.0.0",
+  "compatibility": ">=1.0.0",
+  "sdk": 2,
+  "name": {
+    "en": "AutoRemote Message"
+  },
+  "tags": {
+        "en": [ "AutoRemote" ],
+		"nl": [ "AutoRemote" ],
+		"en": [ "Message" ],
+		"nl": [ "Bericht" ]
+    },
+  "description": {
+    "en": "Send a message to AutoRemote/Tasker",
+	"nl": "Verstuur een bericht naar AutoRemote/Tasker"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Joost van Gils",
+    "email": "joostvangils@valuestream.nl"
+  },
+  "flow": {
+	  "triggers": [],
+	  "conditions": [],
+	  "actions": [
+			{
+			"id": "send_message",
+			"title": {
+				"en": "Send a Message to AutoRemote/Tasker.",
+				"nl": "Verstuur bericht naar AutoRemote/Tasker."
+			},
+			"args": [
+			  {
+				"type": "text",
+				"name": "msg",
+				"placeholder": {
+				  "en": "Message to send",
+				  "nl": "Te verzenden bericht"
+				}
+			  },
+			  {
+				"type": "text",
+				"name": "autoremotekey",
+				"placeholder": {
+				  "en": "The Auto Remote Key of your device",
+				  "nl": "De Auto Remote Key van het apparaat"
+				}
+			  },
+			  {
+				"type": "text",
+				"name": "password",
+				"default": "-",
+				"placeholder": {
+				  "en": "Password (- for empty)",
+				  "nl": "Wachtwoord (- voor geen)"
+				}
+			  }
+			]
+		}
+	]
+  }
+}
